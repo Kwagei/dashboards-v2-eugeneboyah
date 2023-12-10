@@ -1,0 +1,353 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope';
+}
+
+.wrapper{
+    font-family: 'Manrope';
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(197, 197, 197);
+
+
+}
+.logo{
+     /* background-color: blue;  */
+    flex-basis: 20rem;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 65rem;
+    justify-content: space-between;
+    /* background-color: rgb(0, 255, 26); */
+    padding: 20px;
+
+}
+ .nav-bar i{
+    font-size: 30px;
+    color: #6e6e6e;
+
+}
+.searching{
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+.searching p{
+    font-size: 20px;
+    color: #6e6e6e;
+
+}
+.notification-icon{
+    margin-top: 10px;
+
+} 
+.notification-icon i{
+    /* background-color: #958c8c; */
+    background-color: #edecec;
+    padding: 6px;
+    color: black;
+    border-radius: 10px;
+}
+.container{
+    display: flex;
+    /* background-color: violet; /
+}
+.aside{
+    flex-basis: 18rem;
+    / height: 500px; */
+    /* background-color: tomato; */
+    background-color: white;
+    border-right: 1px solid rgb(197, 197, 197);
+
+}
+.account{
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 30px; */
+    padding: 20px;
+
+}
+.account-picture{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.account img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.account h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.account p{
+    color: #6e6e6e;
+
+}
+.containing i{
+    background-color: #edecec;
+    padding: 6px;
+    color: black;
+    border-radius: 10px;
+}
+.dashboard,
+.finance,
+.employees,
+.company,
+.calendar,
+.candidate,
+.my-account,
+.profile,
+.setting
+{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+
+}
+.calendar{
+    border-bottom: 1px solid rgb(197, 197, 197);
+    padding-bottom: 30px;
+}
+
+.my-account{
+    display: flex;
+     justify-content: space-between; 
+    gap: 20px;
+    margin-top: 40px;
+}
+.dashboard i,
+.finance i,
+.employees i,
+.company i,
+.calendar i,
+.candidate i, 
+.my-account i,
+.setting i{
+    font-size: 25px;
+}
+.dashboard h2,
+.finance h2,
+.employees h2,
+.company h2,
+.calendar h2,
+.candidate h2, 
+.my-account h2,
+.setting h2{
+    font-weight: 400;
+    font-size: 20px;
+}
+.view{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 62rem;
+    background-color: #f6f5f5;
+    background-color: rgb(244, 245, 246);
+    gap: 30px;
+    padding: 20px;
+}
+.view-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 8rem;
+    /* background-color: black;  */
+    gap: 20px;
+     padding: 10px; 
+}
+.total-employees,
+.job-view,
+.job-applied,
+.resigned-employees{
+     display: flex;
+    flex-basis: 200px;
+    background-color: #FCFAFF; 
+}
+.total-employees{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 200px;
+    flex-grow: 1;
+    height: 140px;
+    border-radius: 8px;
+}
+.job-view{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 200px;
+    flex-grow: 1;
+    border-radius: 8px;
+}
+.job-applied{
+    display: flex;
+    flex-direction: row;
+     flex-grow: 1; 
+    flex-basis: 200px;
+    flex-grow: 1;
+    border-radius: 8px;
+}
+.resigned-employees{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 250px;
+     flex-grow: 1; 
+    flex-grow: 1; 
+    height: 140px;
+    border-radius: 8px;
+}
+.output{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+.output h2{
+    font-size: 15px;
+    font-weight: 600;
+}
+.output h1{
+    font-weight: 700;
+}
+.output p{
+    color: #6e6e6e;
+
+}
+.percentage{
+    background-color: rgb(189, 224, 189);
+    margin-top: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+.statistics{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+
+
+}
+.about-job{
+    display: flex;
+    justify-content: space-between;
+
+}
+#checkbox1,
+#checkbox{
+    margin-bottom: 120px;
+}
+.label1{
+    font-size: 15px;
+    background-color: aliceblue;
+}
+.job-view,
+.job-applied{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 5px;
+}
+.status{
+    display: flex;
+    flex-direction: row;
+     /* background-color: darkviolet;  */
+
+    flex-basis: 15rem;
+    gap: 20px;
+}
+.status h3{
+    font-size: 15px;
+}
+.employee-status{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: dimgray;
+    background-color: #FCFAFF;
+    /* background-color: brown;  */
+
+border-radius: 8px;
+}
+.employee-composition{
+    flex-grow: 1;
+    background-color: #FCFAFF;
+    border-radius: 8px;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0px 20px;
+
+}
+.name h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+.name span{
+    margin-left: 10px;
+
+}
+.name p{
+    
+}
+.about-employee{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.justin img,
+.marcus img,
+.leo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.employee-details{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #6e6e6e;
+    text-align: center;
+
+}
+.justin,
+.marcus,
+.leo{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.img{
+    display: flex;
+    gap: 10px;
+}
+
+.contract{
+    border-radius: 10px;
+    background-color: #edecec;
+    padding: 6px;
+}
+.employee-name{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.percentage{
+    display: flex;
+}
+.permanent{
+    color: aquamarine;
+    background-color: #edecec;
+    border-radius: 10px;
+    padding: 6px;
+}

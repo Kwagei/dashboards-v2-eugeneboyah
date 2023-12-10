@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Manrope:wght@300;400;500;600;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="nav-bar">
+                <div class="searching">
+                    <i class="ri-search-line"></i>
+                    <p>Search...</p>
+                </div>
+                    <div class="notification-icon">
+                    <i class="ri-notification-2-line"></i>
+                    </div>
+                
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="aside-bar">
+
+                <div class="account">
+                    <div class="account-picture">
+                        <img src="eugene.png" alt="">
+                        <div class="name-rank">
+                            <h2>Eugene</h2>
+                            <p>CEO</p>
+                        </div>
+                    </div>
+                    <div class="containing">
+                        <i class="ri-more-fill"></i>
+                    </div>
+                </div>
+
+                <div class="dashboard">
+                    <i class="ri-dashboard-line"></i> 
+                    <h2>Dashboard</h2>
+                </div>
+
+                <div class="finance">
+                    <i class="ri-bar-chart-2-line"></i>
+                    <h2>Finance</h2>
+                </div>
+
+                <div class="employees">
+                    <i class="ri-account-box-line"></i>
+                    <h2>Employees</h2>
+                </div>
+
+                <div class="company">
+                    <i class="ri-briefcase-4-line"></i>
+                    <h2>Company</h2>
+                </div>
+                
+                <div class="candidate">
+                    <i class="ri-account-pin-box-line"></i>
+                    <h2>Candidate</h2>
+                </div>
+
+                <div class="calendar">
+                    <i class="ri-calendar-2-line"></i>
+                    <h2>Calendar</h2>
+                </div>
+
+                <div class="profile">
+                    <i class="ri-account-box-line"></i>
+                    <h2>Profile</h2>
+                </div>
+
+                <div class="setting">
+                    <i class="ri-settings-2-line"></i>
+                    <h2>Setting</h2>
+                </div>
+            </div>
+
+            <div class="view">
+                <div class="view-main">
+                    <div class="total-employees">
+                        <div class="output">
+                            <h2>Total Employees</h2>
+                            <h1>856</h1>
+                            <p>Employee</p>
+                        </div>
+                        <div class="percentage">
+                            <h4>10.0%</h4>
+                        </div>
+                    </div>
+
+
+                    <div class="job-view">
+                        <div class="output">
+                            <h2>Job View</h2>
+                            <h1>3,342</h1>
+                            <p>Viewers</p>
+                        </div>
+                        <div class="percentage">
+                            <h4>22.0%</h4>
+                        </div>
+                    </div>
+
+
+                    <div class="job-applied">
+                        <div class="output">
+                            <h2>Job Applied</h2>
+                            <h1>77</h1>
+                            <p>Applicants</p>
+                        </div>
+                        <div class="percentage">
+                            <h4>12.0%</h4>
+                        </div>
+                    </div>
+
+
+                    <div class="resigned-employees">
+                        <div class="output">
+                            <h2>Resigned Employees</h2>
+                            <h1>17</h1>
+                            <p>Employee</p>
+                        </div>
+                        <div class="percentage">
+                            <h4>7.0%</h4>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="statistics">
+                <h1>Job Statistics</h1>
+                <div class="about-job">
+                    <div class="job-view">
+                        <input type="checkbox" name="" id="checkbox1">
+                        <label for="" class="label1">Job View</label>
+                    </div>
+                    <div class="job-applied">
+                        <input type="checkbox" name="" id="checkbox">
+                        <label for="" class="label1">Job Applied</label>
+                    </div>
+                    <div class="job-month">
+                        <select name="" id="">
+                            <option value="">This Month</option>
+                        </select>
+                    </div>
+               </div>
+            </div>
+                <div class="statistics-job">
+                    <div>
+                        <canvas id="myChart"></canvas>
+                      </div>
+                      
+                      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                      
+                      <script>
+                        const ctx = document.getElementById('myChart');
+                      
+                        new Chart(ctx, {
+                          type: 'bar',
+                          data: {
+                            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ],
+                            datasets: [{
+                            //   label: '# of Votes',
+                              data: [44, 60, 63, 48, 40, 49, 52, 57, 53, 48, 43, 59],
+                              borderWidth: 1
+                            }]
+                          },
+                          options: {
+                            scales: {
+                              y: {
+                                beginAtZero: true
+                              }
+                            }
+                          }
+                        });
+                      </script>
+                       
+               </div>
+        
+
+            <div class="status">
+                    <div class="employee-status">
+                        <div class="name">
+                            <h1>Employee Status</h1>
+                            <p>Filter & Short<span><i class="ri-equalizer-fill"></i></span></p>
+                            
+                        </div>
+
+                        <div class="about-employee">
+                        <div class="employee-details">
+                            <p>Employee Name</p>
+                            <p>Department</p>
+                            <p>Age</p>
+                            <p>Discipline</p>
+                            <p>Status</p>
+                        </div>
+
+                        <div class="justin">
+                            <div class="img">
+                                <img src="eugene.png" alt="">
+                                <h3 class="employee-name">Justin Lipshutz</h3>
+                            </div>
+                            <h3>Marketing</h3>
+                            <h3>22</h3>
+                            <div class="percentage">
+                                <i class="ri-add-fill"></i>
+                                <h3>100%</h3>
+                            </div>
+                            <h3 class="permanent">Permanent</h3>
+                        </div>
+
+                        <div class="marcus">
+                            <div class="img">
+                                <img src="status-2.png" alt="">
+                                <h3 class="employee-name">Marcus Culhane</h3>
+                            </div>
+                            <h3>Finance</h3>
+                            <h3>24</h3>
+                            <div class="percentage">
+                                <i class="ri-add-fill"></i>
+                                <h3>95%</h3>
+                            </div>
+                            <h3 class="contract">Contract</h3>
+                        </div>
+
+                        <div class="leo">
+                            <div class="img">
+                                <img src="status.png" alt="">
+                                <h3 class="employee-name">Leo Stanton</h3>
+                            </div>
+                            <h3>R&D</h3>
+                            <h3>28</h3>
+                            <div class="percentage">
+                                <i class="ri-add-fill"></i>
+                                <h3>89%</h3>
+                            </div>
+                            <h3 class="permanent">Permanent</h3>
+                        </div>
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="employee-composition">
+                        <h1>Employee Composition</h1>
+                    </div>    
+                        
+             </div>
+            </div>
+
+        </div>
+
+</div>
+</body>
+</html>
+
