@@ -9,6 +9,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Manrope:wght@300;400;500;600;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['employee percentage', ''],
+          ['Men', 35],
+          ['Women',    65]
+        ]);
+
+        var options = {
+          title: 'Employee Composition',
+          pieHole: 0.5,
+          
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
 </head>
 <body>
 <div class="wrapper">
@@ -251,7 +273,7 @@
 
 
                     <div class="employee-composition">
-                        <h1>Employee Composition</h1>
+                        <div id="donutchart" style="width: 400px; height: 300px;"></div>
                     </div>    
                         
              </div>
